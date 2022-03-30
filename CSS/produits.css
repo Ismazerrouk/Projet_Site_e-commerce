@@ -1,0 +1,26 @@
+#divZoom{
+    position: absolute;
+    width: 50%;
+    margin-left: 30%;
+    border: solid 1px black;
+    background-color: rgb(0, 108, 112);
+    top: 20%;
+    border-radius: 3px;
+    display: none;
+    align-items: center;
+}
+#divImageZoom{
+
+    margin: 15px 15px;
+    background-color: aliceblue;
+
+}
+
+table{
+    display: block;
+}
+
+#fermer{
+    position: absolute;
+    font-size: 30px;
+}
