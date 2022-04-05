@@ -1,15 +1,15 @@
 <?php
 echo '<header class="entete">
-    <h1 id="logo"><a href="index.html"> FitProt </a></h1>
+    <h1 id="logo"><a href="index.php"> FitProt </a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li class="deroulant"><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li class="deroulant"><a href="nutrition.php">Nutrition</a></li>
 
-                <li class="deroulant"><a href="vetements.html">Vêtements</a></li>
+                <li class="deroulant"><a href="vetements.php">Vêtements</a></li>
 
-                <li><a href="accessoires.html">Accessoires</a></li>
-                <li><a href="contact.html">Contactez nous</a></li>
+                <li><a href="accessoires.php">Accessoires</a></li>
+                <li><a href="contact.php">Contactez nous</a></li>
             </ul>
 
         </nav>
