@@ -56,8 +56,8 @@ include 'header.php';
                 <span id="erreurMsgEmail"></span>
             </div>
             <div class="Droite">
-                <label id="telephone">Téléphone (optionnel)</label> <br>
-                <input type="text"> <br>
+                <label>Téléphone (optionnel)</label> <br>
+                <input type="text" id="telephone"> <br>
                 <span id="erreurMsgTelephone"></span>
             </div>
             <div class="grid-milieu">
@@ -73,9 +73,11 @@ include 'header.php';
             </div>
 
             <label>Date de contact :</label>
-            <input type="date" id="">
+            <input type="date" id="Date de contact">
+            <span id="erreurMsgContact"></span>
             <label>Date de Naissance :</label>
-            <input type="date" id="">
+            <input type="date" id="Date de naissance">
+            <span id="erreurMsgNaissance"></span>
 
             <div class="grid-milieu">
                 <button type="button" onclick="erreur()">Envoyer</button>
