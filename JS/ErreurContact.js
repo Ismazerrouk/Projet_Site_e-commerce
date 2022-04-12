@@ -1,12 +1,11 @@
 function erreur() {
-    const pathalpha = /[a-z]/;
+    const pathalpha = /^[a-zA-Z\-]+$/g;
     const pathernTel = /^((\+)33|0)[1-9](\d{2}){4}$/g;
     const pathMail = /\S+@\S+\.\S+/;
     var nom = document.getElementById("Nom");
     var prenom = document.getElementById('prenom');
     var Email = document.getElementById("Email");
     var telephone = document.getElementById("telephone");
-
 
 
     if (pathalpha.test(nom.value) == false) {
@@ -32,9 +31,9 @@ function erreur() {
 
     }
 
+    //todo
     var date2 = document.getElementById("Date de naissance");
-
-    if (date2 > "31/12/2006") {
+    if (date2.value > "31/12/2006") {
 
         var msg = document.getElementById("erreurMsgNaissance");
         msg.innerHTML = "Age minimum requis de 16 ans";
@@ -49,10 +48,12 @@ function erreur() {
 
 
     var date1 = document.getElementById("Date de contact");
-    console.log(date1.value);
     var date1 = new Date(date1.value);
+    console.log(date1.getDay(), date3.getDay());
 
-    if (date1 = !date3) {
+
+
+    if (date1.getDay() != date3.getDay()) {
 
         var msg = document.getElementById("erreurMsgContact");
         msg.innerHTML = "Date invalide";

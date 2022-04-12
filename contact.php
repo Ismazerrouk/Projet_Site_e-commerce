@@ -38,6 +38,7 @@ include 'header.php';
                 </ul>
             </div>
         </div>
+
         <h2>Contactez nous !</h2>
         <form>
             <div class="Gauche">
@@ -47,7 +48,7 @@ include 'header.php';
             </div>
             <div class="Droite">
                 <label>Prénom </label> <br>
-                <input placeholder="Prénom" id="prenom">
+                <input placeholder="Prénom" id="prenom"> <br>
                 <span id="erreurMsgPrenom"></span>
             </div>
             <div class="Gauche">
@@ -73,10 +74,10 @@ include 'header.php';
             </div>
 
             <label>Date de contact :</label>
-            <input type="date" id="Date de contact">
+            <input type="date" id="Date de contact"> <br>
             <span id="erreurMsgContact"></span>
             <label>Date de Naissance :</label>
-            <input type="date" id="Date de naissance">
+            <input type="date" id="Date de naissance"> <br>
             <span id="erreurMsgNaissance"></span>
 
             <div class="grid-milieu">
