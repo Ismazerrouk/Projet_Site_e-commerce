@@ -40,6 +40,7 @@
         </form>
 </body>
 
+
 <div id="divZoom">
     <i class="fa-solid fa-xmark" id="fermer" onclick="fermer()"></i>
     <div id="divImageZoom">

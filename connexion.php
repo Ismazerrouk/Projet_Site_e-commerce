@@ -37,7 +37,7 @@
     ?>
 
     <form action="connexion.php" method="POST">
-
+            
             <label>Identifiant </label> 
             <label>Mot de passe </label> 
             <input id="identifiant" name="id" placeholder="identifiant"  required> 

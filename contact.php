@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/6ba91b490a.js" crossorigin="anonymous"></script>
     <script src="JS/index.js"></script>
     <link rel="icon" href="Image/logoOnglet.png">
-    <!-- <script src="JS/ErreurContact.js"></script> -->
+    <script src="JS/ErreurContact.js"></script>
 
 </head>
 

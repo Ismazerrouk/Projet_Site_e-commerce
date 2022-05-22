@@ -18,22 +18,27 @@ function getXhr() {
 
 function MajStock(element) {
     var xhr = new XMLHttpRequest();
-    console.log(element);
-    alert("stockkkkk !");
-    // var xhr;
-    // if ((xhr = getXhr()) == null) return;
-    // var stock = document.getElementsByClassName("stock");
-    // var ref = document.getElementsByClassName("ref");
+    var ref = element.parentNode.parentNode.getElementsByClassName('ref')[0]
+    var stock = element.parentNode.parentNode.getElementsByClassName('stock')[0];
+    var qte = element.parentNode.parentNode.getElementsByClassName('nb-article')[0];
+    console.log(stock);
+    var data = "stock=" + stock.innerHTML + "&" + "qte=" + qte.innerHTML + "&" + "ref=" + ref.innerHTML;
+    var xhr;
+    if ((xhr = getXhr()) == null) return;
 
-    // xhr.onreadystatechange = function () {
-    //     if (xhr.readyState == 4 && xhr.status == 200) {
-    //         reponse = xhr.responseText;
-    //         stock.innerHTML = reponse;
-    //     }
-    // }
+    if (qte.innerHTML != null) {
+        stock.innerHTML = stock.innerHTML - qte.innerHTML;
+    }
 
-    // // Ouverture et envoi de la requete
-    // xhr.open("GET", "majStock.php", true);
-    // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    // xhr.send("nbr=" + document.getElementsByClassName("stock").value);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            reponse = xhr.responseText;
+
+        }
+    }
+
+    // Ouverture et envoi de la requete ajax
+    xhr.open("POST", "majStock.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    xhr.send(data);
 }

@@ -25,5 +25,11 @@
         include 'divGauche.php';
     ?>
     <h2>Votre panier </h2>
+
+    <?php
+        echo $_SESSION["ref"];
+        
+
+    ?>
 </body>
 </html>

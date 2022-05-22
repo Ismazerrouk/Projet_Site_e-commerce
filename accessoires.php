@@ -8,6 +8,7 @@
     <link rel="icon" href="Image/logoOnglet.png">
     <script src="JS/CacherStock.js"></script>
     <script src="JS/nbArticle.js"></script>
+    <script src="JS/ajaxStock.js"></script>
 </head>
 
 <?php
